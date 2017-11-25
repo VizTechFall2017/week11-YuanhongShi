@@ -90,8 +90,8 @@ function drawPoints(pointData){
             return scaleY(d.women);
         })
         .attr('data-toggle', 'tooltip')
-        .attr('title', function(d) {
-            return d.women;
+        .attr('title', function(d){
+            return (d.tooltipText +','+ d.women);
         });
         /*.on("mouseover", function(d) {
             div.transition()
@@ -116,7 +116,7 @@ function drawPoints(pointData){
             return scaleY(d.men);
         })
         .attr('data-toggle', 'tooltip')
-        .attr('title', function(d) {
+        .attr('title', function(d){
             return d.men;
         });
         /*
